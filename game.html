@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<canvas id = "gameCanvas" width="800" height="600" ></canvas>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <svg>
+        <text x="0" y="15" fill="white">click to start | press P to pause game</text>
+        Sorry, your browser does not support inline SVG.
+    </svg>
+    <div class = "comenzi" id = "comenzi">
+        <img src="logo.png" alt="logo" id="drag1" draggable="true" ondragstart="drag(event)" > <br>
+        <p id = "date"></p>
+        &nbsp&nbspName
+        <input type="text" name="Name" value="Player 1"><br>
+
+        &nbsp&nbspDraw middle line <br>
+        <input type="checkbox" name = "net" value="net"> Net <br>
+
+        &nbsp&nbspChoose ball color <br>
+        <input type="radio" name = "ball" value="yellow"> Yellow <br>
+        <input type="radio" name = "ball" value="pink"> Pink <br>
+
+        &nbsp&nbspChoose palette color <br>
+        <input type="radio" name = "palette" value="red"> Red <br>
+        <input type="radio" name = "palette" value="green"> Green <br>
+
+        <button id = "buton" class = "buton">Apply</button>
+        <button onclick="displayColor()" id = "buton2" class = "buton" >Show color</button>
+        
+        <p id = "txt"></p>
+        <p id = "txt2"></p>
+        <div>
+		<br>
+        <p id = "score">Score</p> <br>
+        <table id="myTable">
+            <tr>
+                <td>Player 1&nbsp</td>
+                <td>&nbspPlayer 2</td>
+            </tr>
+        </table>
+        <br>
+        </div>
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <p id = "Lcounter"></p>
+        <p id = "Scounter"></p>
+
+    </div>
+</body>
+</html>
